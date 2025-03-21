@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2E02 表單練習</title>
+    <link rel="stylesheet" href="tailwindcssreset.css">
+    <link rel="stylesheet" href="formHW.css">    
+</head>
+<body>
+    <form>
+        <div class="title_card">
+            <div class="t_background"></div>
+            <h1 class="title">F2E02 表單練習</h1>
+            <h3 class="title">僅供新尖兵F2E02表單切版練習作業</h3>
+            <hr>
+            <p class="title">
+                <a href="#">登入 Google</a>
+                 即可儲存進度｡ 
+                 <a href="#">瞭解詳情</a>
+            </p>
+            <hr>
+            <p class="title im_txt">*表示必填問題</p>
+            
+        </div>
+        <div class="card">
+
+            <fieldset>
+                <legend>姓名<p class="im_txt">*</p></legend>
+                <label>
+                    <div class="input_box">
+                        <input type="text" name="" id="" placeholder="您的回答" required>
+                        <div class="underline"></div>
+                    </div>
+                </label>
+            </fieldset>
+        </div>
+        <div class="card">
+
+            <fieldset>
+                <legend>信箱<p class="im_txt">*</p></legend>
+                <label>
+                    <div class="input_box">
+                        <input type="email" name="" id="" placeholder="您的回答" required>
+                        <div class="underline"></div>
+                    </div>
+                </label>
+            </fieldset>
+        </div>
+        <div class="card">
+
+            <fieldset>
+                <legend>生日</legend>
+                <label class="date_txt">
+                    <p>日期</p><br>
+                    <div class="date_box">
+                        <input type="date" name="" id="" class="date">
+                        <div class="underline"></div>
+                    </div>
+                </label>
+            </fieldset>
+        </div>
+        <div class="card">
+
+            <fieldset>
+                <legend>想跟老師說悄悄話</legend>
+                <label>
+                    <input type="text" name="" id="" placeholder="您的回答">
+                    <div class="underline"></div>
+                </label>
+            </fieldset>
+        </div>
+        <div class="card">
+
+            <fieldset>
+                <legend>喜歡的顏色</legend>
+                <label>
+                    <input type="radio" name="fav_color" value="黃" id="" class="radio">黃
+                </label><br>
+                <label>
+                    <input type="radio" name="fav_color" value="綠" id="" class="radio">綠
+                </label><br>
+                <label>
+                    <input type="radio" name="fav_color" value="紅" id="" class="radio">紅
+                </label>
+            </fieldset>
+        </div>
+        <div class="card">
+            <fieldset>
+                <legend>喜歡的飲食類型</legend>
+                <label>
+                    <input type="checkbox" name="like_food" value="中式" id="" class="checkbox">中式<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="like_food" value="義式" id="" class="checkbox">義式<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="like_food" value="日式" id="" class="checkbox">日式<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="like_food" value="韓式" id="" class="checkbox">韓式<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="like_food" value="美式" id="" class="checkbox">美式<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="like_food" value="泰式" id="" class="checkbox">泰式
+                </label>
+            </fieldset>
+        </div>
+        <div class="card">
+
+            <fieldset>
+                <legend>最想去的國家</legend>
+                <select name="togo_country" id="">
+                    <option value="日本">日本</option>
+                    <option value="韓國">韓國</option>
+                    <option value="泰國">泰國</option>
+                    <option value="德國">德國</option>
+                    <option value="英國">英國</option>
+                    <option value="加拿大">加拿大</option>
+                    <option value="美國">美國</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="button">
+            <button type="submit" class="submit">提交</button>
+            <button type="reset" class="reset">清除表單</button>
+        </div>
+        <div class="hint">
+            <small>
+                請勿利用Google 表單送出密碼
+            </small>
+        </div>
+    </form>
+    <footer>
+        <div class="footer">
+            <small>這份表單是在 五倍紅寶石程式資訊教育股份有限公司 中建立。<br>
+                <small class="ex_small">Does this form look suspicious?
+                    <a href="#" class="footer_a">報告</a>
+                </small>
+            </small>
+            <h2>Google 表單</h2>
+        </div>
+    </footer>
+</body>
+</html>

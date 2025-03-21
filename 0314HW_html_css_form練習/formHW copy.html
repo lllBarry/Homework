@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form作業練習</title>
+    <link rel="stylesheet" href="tailwindcssreset.css">
+    <link rel="stylesheet" href="formHW copy.css">
+</head>
+<body>
+    <form>
+      <div class="title_card">
+        <div class="title_color"></div>
+        <div class="title_tbox">
+            <h1>F2E02 表單練習</h1>
+            <p>僅供新尖兵 F2E02 表單切版練習作業</p>
+        </div>
+        <div class="underline"></div>
+        <div class="title_tbox">
+            <p>
+                <a href="#">登入 Google</a>
+                <p> 即可儲存進度｡ </p>
+                <a href="#">瞭解詳情</a>
+            </p>
+        </div>
+        <div class="underline"></div>
+        <div class="title_tbox">
+            <p class="star_txt">* 表示必填問題</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3 class="q_title">
+            姓名
+            <p class="star_txt">*</p>
+        </h3>
+        <input type="text" name="" id="" required placeholder="您的回答">
+        <div class="underline"></div>
+      </div>
+      <div class="card">
+        <h3 class="q_title">
+            信箱
+            <p class="star_txt">*</p>
+        </h3>
+        <input type="text" name="" id="" required placeholder="您的回答">
+        <div class="underline"></div>
+      </div>
+      <div class="card">
+        <h3 class="q_title">生日</h3>
+        <label>
+            <small>日期</small>
+            <input type="date">
+            <div class="underline"></div>
+        </label>
+      </div>
+      <div class="card">
+        <h3 class="q_title">想跟老師說悄悄話</h3>
+        <input type="text" name="" id="" placeholder="您的回答">
+        <div class="underline"></div>
+      </div>
+      <div class="card">
+        <h3 class="q_title">喜歡的顏色</h3>
+        <div class="choose">
+          <label>
+            <input type="radio" name="fav_color" id="" value="黃">黃
+            <span class="radio_btn"></span>
+          </label>
+          <label>
+            <input type="radio" name="fav_color" id="" value="綠">綠
+            <span class="radio_btn"></span>
+          </label>
+          <label>
+            <input type="radio" name="fav_color" id="" value="紅">紅
+            <span class="radio_btn"></span>
+          </label>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="q_title">喜歡吃的飲食類型</h3>
+        <div class="choose">
+          <label>
+            <input type="checkbox" name="like_food" id="" value="中式">中式
+            <span class="checkbox_btn"></span>
+          </label>
+          <label>
+            <input type="checkbox" name="like_food" id="" value="義式">義式
+            <span class="checkbox_btn"></span>
+          </label>
+          <label>
+            <input type="checkbox" name="like_food" id="" value="日式">日式
+            <span class="checkbox_btn"></span>
+          </label>
+          <label>
+            <input type="checkbox" name="like_food" id="" value="韓式">韓式
+            <span class="checkbox_btn"></span>
+          </label>
+          <label>
+            <input type="checkbox" name="like_food" id="" value="美式">美式
+            <span class="checkbox_btn"></span>
+          </label>
+          <label>
+            <input type="checkbox" name="like_food" id="" value="泰式">泰式
+            <span class="checkbox_btn"></span>
+          </label>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="q_title">最想去的國家</h3>
+        <select name="country" id="">
+            <option value="日本">日本</option>
+            <option value="韓國">韓國</option>
+            <option value="泰國">泰國</option>
+            <option value="德國">德國</option>
+            <option value="英國">英國</option>
+            <option value="加拿大">加拿大</option>
+            <option value="美國">美國</option>
+        </select>
+      </div> 
+      <div class="button">
+          <div class="btn_box">
+              <button type="submit" class="submit_btn">
+                  <p>提交</p>
+              </button>
+              <button type="reset" class="reset_btn">
+                  <p>清除表單</p>
+              </button>
+            </div>
+            <small>請勿利用 Google 表單送出密碼。</small>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <small class="footer_txt">
+            這份表單是在 五倍紅寶石程式資訊教育股份有限公司 中建立。
+        </small>
+        <small>
+            Does this form look suspicious? 
+            <a href="#" class="footer_txt a__">報告</a>
+        </small>
+        <h2>
+            <a href="#" class="footer_txt">Google 表單</a>
+        </h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    font-size: 12px;
+}
+table{
+    border: 1px solid #456445;
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid #456445;
+    height: 30px;
+}
+tr{
+    border: 1px solid #456445;
+    height: 30px;
+}
+td{
+    border: 1px solid #456445;
+    height: 30px;
+    font-size: 14px;
+}
+.smallbox{
+  width: 30px;
+}
+.midbox{
+    width: 60px;
+    height: 30px;
+}
+.time{
+  font-size: 8px;
+}
+
+.diagonal {
+
+    background: linear-gradient(to top right, /*漸層色的方向，應與要繪製的對角線相交*/
+    #ffffff 49.5%,                    /*表頭的背景顏色*/
+    #000000 49.5%, #cccccc 50.5%,     /*對角線的線段顏色*/
+    #ffffff 50.5%);                   /*表頭的背景顏色*/
+} 
+    /* th单元格 */
+    .slash-wrap {
+        position: relative;
+        box-sizing: border-box;
+        width: 50px;
+        /* height: 80px; */
+      }
+  
+      /* 斜线 */
+      .slash {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        /* 斜边边长 */
+        /* Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2)) */
+        /* Math.sqrt(Math.pow(150, 2) + Math.pow(80, 2)) = 170 */
+        width: 60px;
+        height: 1px;
+        background-color:#000;
+        /* 旋转角度计算公式 */ 
+        /*  Math.atan(height / width) * 180 / Math.PI  */
+        /*  Math.atan(80 / 150) * 180 / Math.PI  = 28.072486935852954 */
+        transform: rotate(35.5deg); 
+        transform-origin: top left;
+      }
+  
+      /* 左下角文字 */
+      .left {
+        position: absolute;
+        /* 左下角 left:0; bottom: 0; */
+        left: 5px;
+        bottom: 0px;
+      }
+  
+      /* 右上角文字 */
+      .right {
+        position: absolute;
+        /* 右上角 right:0; top: 0; */
+        right: 5px;
+        top: 0px;
+      }
+      .text_span{
+        text-align-last: justify;
+        padding:0 50px ;
+      }

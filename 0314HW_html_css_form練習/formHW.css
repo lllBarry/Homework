@@ -1,0 +1,139 @@
+body{
+    background-color: #f0ebf8;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 16px;
+    background-color: #673ab7;
+}
+p{
+    font-size: 14px;
+}
+hr{
+    color: #ddd;
+}
+a{
+    display: inline-block;
+    color: #1a73e8;
+}
+small{
+    font-size: 12px;
+}
+.ex_small{
+    font-size: 10px;
+}
+legend{
+    font-size: 16px;
+}
+form{
+    max-width: 640px;
+    margin: auto;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+fieldset{
+    padding: 12px;
+}
+select{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 60px 8px 8px;
+
+}
+.underline{
+    background-color: rgba(0,0,0,.12);
+    height: 1px;
+    width: 100%;
+}
+.input_box{
+    min-width: 300px;
+    max-width: 50%;
+}
+.t_background{
+    background-color: #673ab7;
+    height: 10px;
+}
+.title_card{
+    margin: 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.title{
+    background-color: #ffffff;
+}
+.title_card h1,.title_card h3,.title_card p{
+    margin: 0 24px;
+    padding: 10px 0;
+}
+.im_txt{
+    margin-left: 4px;
+    color: #d93025;
+    display: inline-block;
+}
+.card{
+    border: 1px solid #ddd;
+    padding: 24px 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 12px;
+}
+.date_txt p{
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+.date_box{
+    display: inline-block;
+}
+.date{
+    width: 100%;
+}
+.submit{
+    color: #ffffff;
+    background-color: #673ab7;
+    font-size: 14px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+.reset{
+    color: #673ab7;
+    font-size: 14px;
+    padding: 8px 22px;
+}
+.radio,.checkbox{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    vertical-align: middle;
+    margin: 8px 8px 8px 0px;
+}
+.button{
+    display: flex;
+    max-width: 640px;
+    justify-content: space-between;
+}
+.hint{
+    font-size: 12px;
+    margin: 12px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+}
+.footer_a{
+    color: black;
+    text-decoration: underline;
+}
+.footer h2{
+    margin: 16px;
+}
