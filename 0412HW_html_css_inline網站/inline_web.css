@@ -1,0 +1,155 @@
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 28px;
+}
+header{
+    height: 90px;
+    border-bottom: 2px solid #ccc;
+}
+img{
+    width: 100%;
+}
+.orange{
+    color: #EC6300;
+}
+.strong{
+    font-weight: 900;
+}
+.default_blue{
+    color: #064C8C;
+}
+.link_blue{
+    color: #000080;
+}
+.navbar{
+    display: flex;
+}
+.intro_page{
+    display: flex;
+    width: 100%;
+    background-image: url(https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_首圖.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.intro_txt{
+    width: 40%;
+}
+.intro_img{
+    width: 100%;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    /* overflow: cover; */
+}
+.sev_range_img{
+    height: 100%;
+    
+}
+
+.mid_txt{
+    text-align: center;
+}
+
+
+.booking_page{
+    display: flex;
+    /* flex-direction: row; */
+}
+.booking_img{
+    width: 100%;
+}
+.feat_icon{
+    width: 40px;
+    height: 40px;
+}
+.feat_item{
+    display: flex;
+}
+.waiting_page{
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png);
+}
+.waiting_img{
+    width: 100%;
+}
+.booking_feat{
+    width: 100%;
+}
+
+.customer{
+    display: flex;
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png);
+}
+.customer_img{
+    width: 100%;
+}
+.customer_feat{
+    width: 100%;
+}
+
+.sort_title{
+    text-align: center;
+}
+.pnr_sort{
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.quote{
+    text-align: center;
+}
+.main_end{
+    text-align: center;
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_form_background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+.input_box{
+    
+}
+.more_info{
+    display: flex;
+
+}
+.contact{
+    width: 100%;
+}
+.try{
+    width: 100%;
+}
+input[type="text"]{
+    margin: auto;
+    display: block;
+    min-width: 400px;
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+footer{
+    color: white;
+}
+
+.footer_icon{
+    width: 90px;
+}
+.footer_main{
+    background-color: #252932;
+    display: flex;
+}
+.footer_end{
+
+}
+.footer_item{
+    width: 100%;
+}
+.footer_item span,
+.footer_item a,
+.footer_item button{
+    display: block;
+}
