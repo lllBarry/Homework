@@ -8,8 +8,22 @@ h4{
     font-size: 28px;
 }
 header{
-    height: 90px;
-    border-bottom: 2px solid #ccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.16);
+    z-index: 10;
+}
+body{
+    padding-top: 96px;
+}
+header nav{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 img{
     width: 100%;
@@ -26,31 +40,43 @@ img{
 .link_blue{
     color: #000080;
 }
-.navbar{
+
+.logo{
+    width: 90px;
+}
+.nav_list{
     display: flex;
+}
+.nav_list li a{
+    display: inline-block;
+    padding: 36px 16px;
 }
 .intro_page{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     background-image: url(https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_首圖.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 .intro_txt{
-    width: 40%;
+    width: 100%;
 }
 .intro_img{
     width: 100%;
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    /* overflow: cover; */
 }
 .sev_range_img{
     height: 100%;
     
 }
-
+.box{
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    background-color: #EC6300;
+    inset: 0 0 0 0;
+    margin: auto;
+}
 .mid_txt{
     text-align: center;
 }
