@@ -1,11 +1,14 @@
 h2{
-    font-size: 32px;
+    font-size: 40px;
 }
 h3{
     font-size: 30px;
 }
 h4{
     font-size: 28px;
+}
+h5{
+    font-size: 24px;
 }
 header{
     position: fixed;
@@ -27,6 +30,9 @@ header nav{
 }
 img{
     width: 100%;
+}
+.strong{
+    font-size: 900;
 }
 .orange{
     color: #EC6300;
@@ -58,16 +64,36 @@ img{
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    justify-content: space-around;
 }
 .intro_txt{
-    width: 100%;
+    /* width: 100%; */
+    margin: 120px 0;
+}
+.intro_txt p{
+    margin: 60px 0;
+}
+.intro_txt button{
+    background-color: #064C8C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 .intro_img{
-    width: 100%;
+    /* width: 100%; */
 }
-.sev_range_img{
-    height: 100%;
-    
+.sev_range{
+    text-align: center;
+}
+.sev_range_txt{
+    background-image: url(https://inline.company/wp-content/uploads/2023/12/New-official-website_v2_country.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 585.84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
 }
 .box{
     width: 600px;
@@ -79,22 +105,45 @@ img{
 }
 .mid_txt{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 80px;
 }
 
 
 .booking_page{
     display: flex;
     /* flex-direction: row; */
+    background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .booking_img{
     width: 100%;
+}
+.booking_feat{
+    width: 100%;
+
+}
+.booking_feat h4{
+    margin-bottom: 50px;
+}
+
+.feat_item{
+    display: flex;
+    /* margin: 50px; */
 }
 .feat_icon{
     width: 40px;
     height: 40px;
 }
-.feat_item{
-    display: flex;
+.feat_txt{
+    margin: 0 50px 50px 40px;
+}
+.feat_txt{
 }
 .waiting_page{
     display: flex;
@@ -102,9 +151,6 @@ img{
     background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png);
 }
 .waiting_img{
-    width: 100%;
-}
-.booking_feat{
     width: 100%;
 }
 
