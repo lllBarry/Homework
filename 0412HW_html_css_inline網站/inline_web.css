@@ -68,7 +68,7 @@ img{
 }
 .intro_txt{
     /* width: 100%; */
-    margin: 120px 0;
+    margin: 80px 0;
 }
 .intro_txt p{
     margin: 60px 0;
@@ -121,33 +121,50 @@ img{
     background-position: center;
     background-size: cover;
 }
-.booking_img{
+.booking_img,
+.waiting_img,
+.customer_img{
     width: 100%;
+    /* align-content: center; */
+    /* margin-bottom: 250px; */
+    margin-top: 100px;
 }
 .booking_feat{
     width: 100%;
-
 }
-.booking_feat h4{
-    margin-bottom: 50px;
+.booking_feat h4,
+.waiting_feat h4,
+.customer_feat h4{
+    margin: 0 50px 50px 50px;
+}
+.booking,
+.waiting,
+.customer{
+    
 }
 
 .feat_item{
     display: flex;
-    /* margin: 50px; */
+    margin: 0 50px;
 }
 .feat_icon{
+    display: inline-block;
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
+}
+.feat_icon img{
+    width: 100%;
 }
 .feat_txt{
-    margin: 0 50px 50px 40px;
+    display: inline-block;
+    margin: 0 50px 50px 20px;
 }
-.feat_txt{
-}
+
 .waiting_page{
     display: flex;
     flex-direction: row-reverse;
+    background-repeat: no-repeat;
     background-image: url(https://inline.company/wp-content/uploads/2024/07/New-official-website_v2_hp_background2.png);
 }
 .waiting_img{
@@ -169,11 +186,48 @@ img{
     text-align: center;
 }
 .pnr_sort{
-    text-align: center;
+    display: flex;
     border-bottom: 1px solid #eee;
+    justify-content: center;
+    /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) ; */
+}
+.pnr_sort .switch{
+    width: 130px;
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+    cursor: pointer;
+}
+.pnr_sort input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+}
+.switch::after {
+    content: "";
+    width: 130px;
+    height: 4px;
+    background-color: #EC6300;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    opacity: 0;
+}
+input[type="radio"]:checked + label.switch::after {
+    opacity: 1;
 }
 .quote{
     text-align: center;
+    margin: 100px;
+}
+.quote h5{
+    margin-top: 50px;
+}
+.form{
+    min-width: 440px;
+    max-width: 40%;
+    background-color: #fff;
+    margin: auto;
 }
 .main_end{
     text-align: center;
@@ -184,6 +238,17 @@ img{
 }
 .input_box{
     
+}
+.more{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    flex-direction: column;
+}
+.more button{
+    padding: 20px;
+    background-color: #064C8C;
+    color: #fff;
 }
 .more_info{
     display: flex;
