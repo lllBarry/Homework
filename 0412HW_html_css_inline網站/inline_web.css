@@ -32,7 +32,7 @@ img{
     width: 100%;
 }
 .strong{
-    font-size: 900;
+    font-weight: 900;
 }
 .orange{
     color: #EC6300;
@@ -185,6 +185,9 @@ img{
 .sort_title{
     text-align: center;
 }
+.partners{
+    /* margin: auto; */
+}
 .pnr_sort{
     display: flex;
     border-bottom: 1px solid #eee;
@@ -201,6 +204,22 @@ img{
 .pnr_sort input[type="radio"]{
     position: absolute;
     opacity: 0;
+}
+.pnr_icon{
+    /* background-color: #064C8C; */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pnr_icon a{
+    display: block;
+    max-width: calc(100%/6);
+}
+
+.pnr_icon a img{
+    width: 100%;
 }
 .switch::after {
     content: "";
@@ -227,7 +246,8 @@ input[type="radio"]:checked + label.switch::after {
     min-width: 440px;
     max-width: 40%;
     background-color: #fff;
-    margin: auto;
+    margin: 0 auto 100px;
+    border-radius: 30px;
 }
 .main_end{
     text-align: center;
@@ -239,6 +259,19 @@ input[type="radio"]:checked + label.switch::after {
 .input_box{
     
 }
+.form_end{
+    padding:0 0 40px 0;
+}
+.form button{
+    display: block;
+    margin: 40px  auto;
+    padding: 10px 40px;
+    background-color: #EC6300;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
 .more{
     display: flex;
     justify-content: center;
@@ -247,19 +280,47 @@ input[type="radio"]:checked + label.switch::after {
 }
 .more button{
     padding: 20px;
+    cursor: pointer;
     background-color: #064C8C;
     color: #fff;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
 }
 .more_info{
     display: flex;
-
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
 }
-.contact{
-    width: 100%;
+.div_line::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 200px;
+    /* top: 50px; */
+    transform: translateY(25%);
+    background-color: #aaa;
 }
+.contact,
 .try{
+    position: relative;
     width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
 }
+.try button{
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #EC6300;
+    color: #fff;
+    border-radius: 10px;
+}
+
 input[type="text"]{
     margin: auto;
     display: block;
@@ -280,7 +341,8 @@ footer{
     display: flex;
 }
 .footer_end{
-
+    background-color: #191C23;
+    color: #9E9983;
 }
 .footer_item{
     width: 100%;
