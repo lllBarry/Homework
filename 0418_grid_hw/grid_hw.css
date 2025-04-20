@@ -1,0 +1,233 @@
+section{
+    width: 100%;
+    background-color: #F1F7F8;
+}
+.title_sec{
+    padding: 20px;
+}
+.title_sec .image{
+    max-width: 1098px; 
+    margin: auto;
+}
+.slideshow{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1098px;
+    gap: 10px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow img{
+    width: calc((100% - 20px)/3);
+    position: relative;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* .slideshow:hover{
+    transform: translateX(calc(-100% - 10px));
+
+} */
+/* ----------------------------------------------------------------- */
+.focus{
+    max-width: 1100px;
+    margin:  50px auto;
+}
+.focus_title{
+    font-size: 30px;
+    font-weight: 900;
+    padding: 6px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.focus_title::before{
+    content: "";
+    left: 0;
+    border-left: 18px solid orange;
+    border-top: 18px solid orange;
+    border-bottom: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: absolute;
+    z-index: -1;
+}
+.wrap{
+    display: flex;
+    height: auto;
+    gap: 10px;
+}
+
+.card_wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-areas: 
+        "ONE TWO FOR"
+        "ONE TWO FIV"
+        "ONE TRE FIV";
+    gap: 10px;
+}
+.focus_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.focus_card{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.focus_card h3{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    bottom: 0;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.focus_card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+.focus_card:nth-of-type(1){
+    grid-area: ONE;
+}
+.focus_card:nth-of-type(2){
+    grid-area: TWO;
+}
+.focus_card:nth-of-type(3){
+    grid-area: TRE;
+}
+.focus_card:nth-of-type(4){
+    grid-area: FOR;
+}
+.focus_card:nth-of-type(5){
+    grid-area: FIV;
+}
+.sale_wrap{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-area: auto;
+    gap: 10px;
+}
+.sale_card{
+    max-width: 355px;
+    height: calc((100%-30px)/4);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 245fr 110fr;
+    grid-template-rows: repeat(1, 1fr);
+    border-radius: 8px;
+}
+.sale_txt{
+    padding: 4px;
+    font-size: 14px;
+    background-color: #FAFAFA;
+
+}
+.sale_img{
+    background-color: blue;
+}
+.japan{
+    max-width: 1100px;
+    margin: auto;
+}
+.japan nav{
+    display: flex;
+    justify-content: space-between;
+}
+.japan nav h2{
+    padding: 6px;
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+}
+.japan nav h2::before{
+    content: "";
+    border-left: 10px solid green;
+    border-top: 10px solid green;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: 0;
+}
+nav .list{
+    margin-right: 50px;
+    font-size: 18px;
+    align-content: center;
+}
+
+.list button{
+    padding: 5px;
+    cursor: pointer;
+}
+.list button:hover{
+    color: lightgreen;
+}
+.japan .card_wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+            "AA AA BB DD"
+            "AA AA CC EE";
+    gap: 10px;
+}
+.japan_card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.japan_card .txt{
+    position: absolute;
+    color: #fff;
+    left: 10px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.japan_card .txt h4{
+    display: inline-block;
+}
+.japan_card img{
+    object-fit: cover;
+    height: 100%;
+}
+.japan_card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+.japan_card:nth-of-type(1){
+    grid-area: AA;
+}
+.japan_card:nth-of-type(2){
+    grid-area: BB;
+}
+.japan_card:nth-of-type(3){
+    grid-area: CC;
+}
+.japan_card:nth-of-type(4){
+    grid-area: DD;
+}
+.japan_card:nth-of-type(5){
+    grid-area: EE;
+}
+.price{
+    color: orange;
+}
+.price_tag{
+    text-align: right;
+    
+}
